@@ -4,9 +4,15 @@
 	<groupId>be.nabu.jfx</groupId>
 	<artifactId>jfx-control-line</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0-SNAPSHOT</version>
+	<version>${be.nabu.jfx-jfx-control-line-version}</version>
 	<name>jfx-control-line</name>
 	<url>http://maven.apache.org</url>
+
+	<parent>
+		<groupId>be.nabu</groupId>
+		<artifactId>core</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
 
 	<build>
 		<plugins>
@@ -21,18 +27,4 @@
                 </plugins>
         </build>
 	
-	<properties>
-		<javafx.version>2.2</javafx.version>
-		<javafx.runtime>/path/to/jre</javafx.runtime>
-	</properties>
-	
-<!--	<dependencies>
-		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>javafx</artifactId>
-			<version>${javafx.version}</version>
-			<scope>system</scope>
-			<systemPath>${javafx.runtime}/lib/jfxrt.jar</systemPath>
-		</dependency>
-	</dependencies>-->
 </project>
