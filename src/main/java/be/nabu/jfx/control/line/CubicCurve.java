@@ -17,7 +17,7 @@ public class CubicCurve extends javafx.scene.shape.CubicCurve {
 		invisibleTarget.controlY1Property().bind(controlY1Property());
 		invisibleTarget.controlX2Property().bind(controlX2Property());
 		invisibleTarget.controlY2Property().bind(controlY2Property());
-		invisibleTarget.setFill(Color.TRANSPARENT);
+		invisibleTarget.setFill(null);
 		invisibleTarget.setStroke(Color.TRANSPARENT);
 		CurveUtils.loadEvents(this, invisibleTarget);
 	}

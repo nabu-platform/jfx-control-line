@@ -17,6 +17,9 @@ public class QuadCurve extends javafx.scene.shape.QuadCurve {
 		invisibleTarget.controlYProperty().bind(controlYProperty());
 		invisibleTarget.setFill(Color.TRANSPARENT);
 		invisibleTarget.setStroke(Color.TRANSPARENT);
+		// we must set it explicitly to null to prevent hitting it
+		// if we set it to transparent, it will still catch mouseover events etc, if we set it to null explicitly, it no longer triggers on mouse over
+		invisibleTarget.setFill(null);
 		CurveUtils.loadEvents(this, invisibleTarget);
 	}
 	
